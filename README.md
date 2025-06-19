@@ -66,6 +66,7 @@ The application requires the following environment variables:
 - `JWT_SECRETKEY`: Secret key for JWT token signing
 - `SPRING_MAIL_USERNAME`: Email address for sending notifications (registration, password recovery)
 - `SPRING_MAIL_PASSWORD`: Application password for the email service
+  
 These variables are configured in the respective `.env` files for each service.
 
 
