@@ -70,6 +70,21 @@ The application requires the following environment variables:
 These variables are configured in the respective `.env` files for each service.
 
 
+The `mysql` container comes preloaded with a fully functional database, including three users (one per role), so that you can test the app's features right away:
+
+| Username       | Role        | Email                  | Password       |
+|----------------|-------------|------------------------|----------------|
+| `user1`        | `USER`      | user1@example.com      | `Password123!` |
+| `admin1`       | `ADMIN`     | admin1@example.com     | `Password123!` |
+| `superadmin1`  | `SUPERADMIN`| superadmin1@example.com| `Password123!` |
+
+Please note the following functional restrictions:
+
+- The **"Upgrade user"** functionality is only available to users with the `SUPERADMIN` role.  
+- The **"Update account status"** functionality is available to `ADMIN` and `SUPERADMIN` roles.  
+- Accounts with the status `PERMANENTLY_SUSPENDED` **cannot be reactivated** under any circumstances.
+
+
 ## Security Overview
 - JWT-based stateless authentication.
 - Role-based access control (SUPERADMIN, ADMIN, and USER).
