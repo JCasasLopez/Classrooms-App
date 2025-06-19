@@ -80,8 +80,8 @@ The `mysql` container comes preloaded with a fully functional database, includin
 
 Please note the following functional restrictions:
 
-- The **"Upgrade user"** functionality is only available to users with the `SUPERADMIN` role.  
-- The **"Update account status"** functionality is available to `ADMIN` and `SUPERADMIN` roles.  
+- Only users with the `SUPERADMIN` role are allowed to use the **"Upgrade user"** functionality.
+- Only users with the `ADMIN` or `SUPERADMIN` roles are allowed to use the **"Update account status"** functionality.
 - Accounts with the status `PERMANENTLY_SUSPENDED` **cannot be reactivated** under any circumstances.
 
 
