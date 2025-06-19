@@ -16,6 +16,7 @@ This monorepo includes both the backend (Spring Boot) and the frontend (Angular)
 
 ## Tech Stack
   ### Backend
+  - Java 17
   - Spring Boot 3
   - Spring Security
   - Spring Data JPA
